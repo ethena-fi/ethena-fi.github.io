@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Ethena Fi",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/ethena-fi.svg",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://ethena-fi.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://ethena-fi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "f32b9anuml",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Ethena Fi | Ethena™ | Official Website",
+        "meta_descr": "ENABLING THE INTERNET BOND_. Synthetic Dollar and Internet Native Yield. sUSDe APY35.4%. Ethereum. Early Access. Enter your invite code to gain early access.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/ethena.png\" alt=\"Ethena\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "u8X41gj7Cl",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Ethena Fi: Transforming DeFi with Enhanced Efficiency and Security</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://ethena-fi.github.io/\" class=\"text-primary\">Ethena Fi</a> is a cutting-edge decentralized finance (DeFi) project that aims to revolutionize the way financial services are conducted on the Ethereum blockchain. In this article, we will explore the concept behind Ethena Fi, its key features, and the potential impact it can have on the DeFi ecosystem. We will delve into the benefits it offers to users, the challenges it addresses, and the future prospects for the project.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>I. Understanding Ethena Fi:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1.1. The Rise of Decentralized Finance (DeFi):<br>DeFi has emerged as a powerful and transformative force within the blockchain industry. It leverages blockchain technology to provide open, transparent, and permissionless financial services to users worldwide. <a href=\"https://www.ethena.fi/\" class=\"text-primary\">Ethena Fi</a> represents a significant advancement in the DeFi space, offering innovative solutions to address the challenges faced by existing platforms.<br><br>1.2. Key Features of Ethena Fi:<br>Ethena Fi introduces several key features that distinguish it as a leading DeFi project:<br><br>a) Enhanced Efficiency: Ethena Fi leverages cutting-edge technologies, such as layer 2 scaling solutions and advanced smart contract optimizations, to significantly improve transaction speeds and reduce gas fees. By enhancing efficiency, Ethena Fi aims to overcome the scalability limitations of the Ethereum network, providing users with a seamless and cost-effective DeFi experience.<br><br>b) Enhanced Security: Security is a paramount concern in the DeFi space. Ethena Fi prioritizes the safety of user funds by implementing robust security measures, including smart contract audits, bug bounty programs, and continuous monitoring for potential vulnerabilities. By focusing on security, Ethena Fi aims to instill confidence and trust among its user base.<br><br>c) Cross-Chain Interoperability: Ethena Fi recognizes the importance of interoperability and aims to bridge different blockchain networks, allowing assets to be seamlessly transferred across multiple chains. This feature expands the possibilities for users, enabling them to access a wider range of assets and liquidity pools.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>II. Benefits of Ethena Fi:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">2.1. Enhanced User Experience:<br>Ethena Fi aims to provide users with a seamless and intuitive DeFi experience. By leveraging layer 2 scaling solutions, users can enjoy faster transaction times and lower fees, eliminating the bottlenecks and frustrations commonly associated with high network congestion. The improved user experience encourages broader adoption of DeFi and empowers users to engage more actively in the ecosystem.<br><br>2.2. Lower Transaction Costs:<br>Gas fees on the Ethereum network have been a significant barrier to entry for many users. Ethena Fi addresses this challenge by implementing innovative solutions to reduce transaction costs. By utilizing layer 2 scaling and optimizing smart contracts, Ethena Fi offers users a cost-effective alternative, making DeFi more accessible to a wider audience.<br><br>2.3. Increased Security:<br>As the DeFi space continues to grow, security becomes a critical concern. Ethena Fi prioritizes security by conducting comprehensive smart contract audits, implementing rigorous testing processes, and incentivizing developers and users to identify potential vulnerabilities. By focusing on security, Ethena Fi aims to protect user funds and foster trust in the platform.<br><br>2.4. Interoperability and Asset Accessibility:<br>Ethena Fi's cross-chain interoperability feature allows users to access a broader range of assets and liquidity pools. This opens up new opportunities for investment, diversification, and yield generation. Users can seamlessly transfer assets between different blockchains, benefiting from the unique features and opportunities presented by each network.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>III. Challenges and Future Outlook:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">3.1. Scalability and Adoption:<br>One of the primary challenges faced by DeFi projects, including Ethena Fi, is scalability. As the user base grows and demand for DeFi services increases, it is essential to ensure that the underlying infrastructure can support the transaction volume. Ethena Fi aims to tackle this challenge by leveraging layer 2 scaling solutions and exploring other scalability options.<br><br>3.2. Security and Auditing:<br>Maintaining robust security measures and conducting regular audits are crucial for the long-term success of Ethena Fi. Ongoing security assessments and bug bounty programs will help identify and address potential vulnerabilities, ensuring the platform remains secure for users.<br><br>3.3. Regulatory Compliance:<br>As the DeFi space evolves, regulatory frameworks may come into play. Ethena Fi aims to proactively engage with regulators and ensure compliance with relevant laws and regulations. By doing so, Ethena Fi seeks to foster a supportive regulatory environment for DeFi, enabling its growth and widespread adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Ethena Fi represents a significant advancement in the DeFi space, offering enhanced efficiency, security, and interoperability. By addressing scalability challenges and reducing transaction costs, Ethena Fi aims to make DeFi more accessible to a wider audience. With its focus on security and cross-chain interoperability, Ethena Fi has the potential to reshape the DeFi landscape, driving innovation and empowering users to participate in a decentralized financial ecosystem that is efficient, secure, and accessible.\n                </p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "u8X41welFJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
